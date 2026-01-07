@@ -14,7 +14,7 @@ section {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1600&q=80")
     center/cover no-repeat;
   position: relative;
 }
@@ -79,30 +79,35 @@ button {
   transform: none;
 }
 
-/* 🇰🇿 ҚАЗАҚИ ОЮ-ӨРНЕК (МИНИМАЛ) */
+/* 🇰🇿 НАҚТЫ ҚАЗАҚИ ОЮ-ӨРНЕК (SVG, МИНИМАЛ) */
+.ornament {
+  position: relative;
+}
+
 .ornament::before,
 .ornament::after {
   content: "";
   position: absolute;
-  left: 50%;
-  width: 120px;
-  height: 14px;
-  background: repeating-linear-gradient(
-    90deg,
-    #c9a24d 0 10px,
-    transparent 10px 20px
-  );
-  transform: translateX(-50%);
-  opacity: 0.6;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='200' height='40' viewBox='0 0 200 40'>\
+<path d='M0 20 Q25 0 50 20 T100 20 T150 20 T200 20' fill='none' stroke='%23c9a24d' stroke-width='2'/>\
+</svg>");
+  background-repeat: repeat-x;
+  background-size: 200px 40px;
+  opacity: 0.5;
 }
 
 .ornament::before {
-  top: 15px;
+  top: 0;
 }
 
 .ornament::after {
-  bottom: 15px;
+  bottom: 0;
 }
+
 
 /* FOOTER */
 footer {
