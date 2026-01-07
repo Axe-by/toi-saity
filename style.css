@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  text-align: center;
+  color: #333;
+  background: #fff;
+}
+
+section {
+  padding: 70px 20px;
+  position: relative;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: 2px;
+}
+
+/* TIMER */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #c9a24d;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle span {
+  font-size: 26px;
+}
+
+/* RSVP */
+input, select, button {
+  padding: 10px;
+  margin: 8px;
+}
+
+button {
+  background: #c9a24d;
+  border: none;
+  cursor: pointer;
+}
+
+/* FADE IN */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* 🇰🇿 ҚАЗАҚИ ОЮ-ӨРНЕК (МИНИМАЛ) */
+.ornament::before,
+.ornament::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  height: 14px;
+  background: repeating-linear-gradient(
+    90deg,
+    #c9a24d 0 10px,
+    transparent 10px 20px
+  );
+  transform: translateX(-50%);
+  opacity: 0.6;
+}
+
+.ornament::before {
+  top: 15px;
+}
+
+.ornament::after {
+  bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  background: #000;
+  color: white;
+}
