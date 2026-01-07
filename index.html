@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Раяна – Тұсау кесер</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero fade">
+  <div class="hero-text">
+    <h1>Раяна</h1>
+    <p>Cіздерді асыға күткен Тұсаукесер тойымызға шақырамыз!</p>
+  </div>
+</section>
+
+<section class="countdown fade ornament">
+  <h2>Тойға дейін:</h2>
+  <div class="timer">
+    <div class="circle"><span id="days">00</span><small>күн</small></div>
+    <div class="circle"><span id="hours">00</span><small>сағат</small></div>
+    <div class="circle"><span id="minutes">00</span><small>минут</small></div>
+    <div class="circle"><span id="seconds">00</span><small>секунд</small></div>
+  </div>
+</section>
+
+<section class="info fade ornament">
+  <h2>Тұсау кесер тойы</h2>
+  <p>📅 07 Ақпан 2026</p>
+  <p>📍 Кентау қаласы, Хан-Төре мейрамханасы</p>
+</section>
+
+<section class="rsvp fade ornament">
+  <h2>Қатысуыңызды растаңыз</h2>
+  <form onsubmit="sendWhatsApp(event)">
+    <input id="name" type="text" placeholder="Аты-жөніңіз" required>
+    <select id="status">
+      <option>Келемін</option>
+      <option>Келе алмаймын</option>
+    </select>
+    <button type="submit">Жіберу</button>
+  </form>
+</section>
+
+<footer class="ornament">
+  <p>Раяна 💛</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
